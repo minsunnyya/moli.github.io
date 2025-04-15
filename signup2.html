@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 2/4</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="back-btn" onclick="history.back()">←</button>
+            <div class="progress">2/4</div>
+        </div>
+
+        <div class="title">물리는 몇살인가요?</div>
+        <div class="radio-group">
+            <div class="radio-option">10대</div>
+            <div class="radio-option">20대</div>
+            <div class="radio-option">30대</div>
+        </div>
+
+        <div class="title">물리의 성별은 어떻게 되나요?</div>
+        <div class="radio-group">
+            <div class="radio-option">남성</div>
+            <div class="radio-option">여성</div>
+            <div class="radio-option">기타</div>
+        </div>
+
+        <button class="next-btn" onclick="location.href='signup3.html'">다음</button>
+    </div>
+
+    <script>
+        document.querySelectorAll('.radio-option').forEach(option => {
+            option.addEventListener('click', function() {
+                // Remove selected class from siblings
+                const siblings = this.parentElement.querySelectorAll('.radio-option');
+                siblings.forEach(sib => sib.classList.remove('selected'));
+                // Add selected class to clicked option
+                this.classList.add('selected');
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 3/4</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="back-btn" onclick="history.back()">←</button>
+            <div class="progress">3/4</div>
+        </div>
+
+        <div class="title">특별히 신경쓰는 것이 있나요?</div>
+        <div class="interest-grid">
+            <div class="interest-option">
+                <div class="interest-icon">🏃</div>
+                <div class="interest-label">체중감량</div>
+            </div>
+            <div class="interest-option">
+                <div class="interest-icon">💪</div>
+                <div class="interest-label">근육증가</div>
+            </div>
+            <div class="interest-option">
+                <div class="interest-icon">🥗</div>
+                <div class="interest-label">식단</div>
+            </div>
+            <div class="interest-option">
+                <div class="interest-icon">🧘</div>
+                <div class="interest-label">체형교정</div>
+            </div>
+            <div class="interest-option">
+                <div class="interest-icon">🏋️</div>
+                <div class="interest-label">운동</div>
+            </div>
+            <div class="interest-option">
+                <div class="interest-icon">🌟</div>
+                <div class="interest-label">기타</div>
+            </div>
+        </div>
+
+        <button class="next-btn" onclick="location.href='signup4.html'">다음</button>
+    </div>
+
+    <script>
+        document.querySelectorAll('.interest-option').forEach(option => {
+            option.addEventListener('click', function() {
+                this.classList.toggle('selected');
+            });
+        });
+    </script>
+</body>
+</html> 

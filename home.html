@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="검색어를 입력해주세요">
+            <span class="search-icon">🔍</span>
+        </div>
+
+        <div class="filter-section">
+            <button class="filter-button">🏃</button>
+            <button class="filter-button">💪</button>
+            <button class="filter-button">🥗</button>
+            <button class="filter-button">🧘</button>
+            <button class="filter-button">🏋️</button>
+            <button class="filter-button">🌟</button>
+        </div>
+
+        <div class="content-section">
+            <div class="content-card">
+                <div class="content-title">오늘의 추천 운동</div>
+                <div class="content-description">맞춤형 운동 프로그램을 시작해보세요.</div>
+            </div>
+            <div class="content-card">
+                <div class="content-title">식단 관리</div>
+                <div class="content-description">건강한 식단으로 목표를 달성하세요.</div>
+            </div>
+            <div class="content-card">
+                <div class="content-title">체형 교정 가이드</div>
+                <div class="content-description">전문가와 함께하는 체형 교정 프로그램</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.filter-button').forEach(button => {
+            button.addEventListener('click', function() {
+                this.classList.toggle('selected');
+            });
+        });
+    </script>
+</body>
+</html> 

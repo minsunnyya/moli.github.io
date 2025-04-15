@@ -1,0 +1,39 @@
+/* Login page specific styles */
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #666;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.social-login {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #666;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.links a {
+    color: #666;
+    text-decoration: none;
+} 

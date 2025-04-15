@@ -1,0 +1,92 @@
+/* Signup pages specific styles */
+.next-btn {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #666;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 374px;
+}
+
+/* Signup page 2 specific styles */
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.radio-option {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.radio-option.selected {
+    background-color: #f0f0f0;
+    border-color: #999;
+}
+
+/* Signup page 3 specific styles */
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.interest-option {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.interest-option.selected {
+    background-color: #f0f0f0;
+    border-color: #999;
+}
+
+.interest-icon {
+    font-size: 24px;
+}
+
+.interest-label {
+    font-size: 14px;
+}
+
+/* Signup page 4 specific styles */
+.completion-message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.start-btn {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #666;
+    font-size: 16px;
+    cursor: pointer;
+    max-width: 374px;
+} 
